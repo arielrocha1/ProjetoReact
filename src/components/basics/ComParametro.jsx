@@ -1,6 +1,7 @@
 import React from "react"
 
 export default function comParametro(props){
+    
     const status = props.nota >= 6 ? "Aprovado" : "Reprovado"
     
     return(

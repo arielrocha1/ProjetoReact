@@ -2,13 +2,14 @@ import './index.css'
 import ReactDOM from "react-dom"
 import React from "react"
 
-import Primeiro from './components/basics/Primeiro'
+import FuncStatic from './components/basics/FuncStatic'
 import ComParametro from './components/basics/ComParametro'
 
 
 ReactDOM.render(
     <div id="app">
-        <Primeiro></Primeiro>
+        <FuncStatic></FuncStatic>
+        
         <ComParametro 
             aluno = "Ariel"
             nota = {5.9}

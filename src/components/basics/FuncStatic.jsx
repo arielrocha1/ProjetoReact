@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function Primeiro(){
+export default function FuncStatic(){
     return(
         <h2>
-           Bem vindo
+           Função estatica
         </h2>
     )
 }
