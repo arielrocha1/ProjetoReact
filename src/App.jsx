@@ -8,6 +8,7 @@ import Fragmento from './components/basics/Fragmento'
 import RandomNumber from "./components/basics/RandomNumber";
 import Card from "./components/layout/Card";
 import Familia from "./components/basics/Familia";
+import FamiliaMembro from "./components/basics/FamiliaMembro";
 
 export default function App(props) {
     return (
@@ -18,7 +19,12 @@ export default function App(props) {
             <div className="Cards" >
 
                 <Card titulo="Desafio 5: Componente com filho" color="#080">
-                    <Familia sobrenome ="Capistrano"></Familia>
+                    <Familia sobrenome="Capistrano">
+                        <FamiliaMembro nome="Fulano1" />
+                        <FamiliaMembro nome="Fulano2" />
+                        <FamiliaMembro nome="Fulano3" />
+                        <FamiliaMembro nome="Fulano4" />
+                    </Familia>
                 </Card>
 
                 <Card titulo="Desafio 4: Numero aleatorio" color="#080">
@@ -38,7 +44,7 @@ export default function App(props) {
                 </Card>
             </div>
 
-        
+
         </div>
     )
 }
