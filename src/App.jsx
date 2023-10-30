@@ -9,6 +9,8 @@ import RandomNumber from "./components/basics/RandomNumber";
 import Card from "./components/layout/Card";
 import Familia from "./components/basics/Familia";
 import FamiliaMembro from "./components/basics/FamiliaMembro";
+import ListaAluno from "./components/Repeticao/ListaAluno";
+import ListaProduto from "./components/Repeticao/ListaProduto";
 
 export default function App(props) {
     return (
@@ -18,7 +20,15 @@ export default function App(props) {
 
             <div className="Cards" >
 
-                <Card titulo="Desafio 5: Componente com filho" color="#080">
+                <Card titulo="Desafio 7: Tabela de preço" color="#F00">
+                    <ListaProduto/>
+                </Card>
+
+                <Card titulo="Desafio 6: Repetição">
+                    <ListaAluno/>
+                </Card >
+
+                <Card titulo="Desafio 5: Componente com filho">
                     <Familia sobrenome="Capistrano">
                         <FamiliaMembro nome="Fulano1" />
                         <FamiliaMembro nome="Fulano2" />
@@ -27,7 +37,7 @@ export default function App(props) {
                     </Familia>
                 </Card>
 
-                <Card titulo="Desafio 4: Numero aleatorio" color="#080">
+                <Card titulo="Desafio 4: Numero aleatorio">
                     <RandomNumber min={1} max={60} />
                 </Card>
 
