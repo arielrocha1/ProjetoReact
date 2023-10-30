@@ -1,9 +1,9 @@
 import React from "react"
 
-export default function FuncStatic(){
-    return(
+export default function FuncStatic() {
+    return (
         <h2>
-           Função estatica
+            Função estatica
         </h2>
     )
 }
