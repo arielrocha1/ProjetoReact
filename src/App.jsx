@@ -9,8 +9,12 @@ import RandomNumber from "./components/basics/RandomNumber";
 import Card from "./components/layout/Card";
 import Familia from "./components/basics/Familia";
 import FamiliaMembro from "./components/basics/FamiliaMembro";
-import ListaAluno from "./components/Repeticao/ListaAluno";
-import ListaProduto from "./components/Repeticao/ListaProduto";
+import ListaAluno from "./components/repeticao/ListaAluno";
+import ListaProduto from "./components/repeticao/ListaProduto";
+import ParOuImpar from "./components/Condicional/ParOuImpar";
+import UsuarioInfo from "./components/Condicional/UsuarioInfo";
+import UsuarioInfo2 from "./components/Condicional/UsuarioInfo2";
+import DiretaPai from "./components/cominicacao/DiretaPai";
 
 export default function App(props) {
     return (
@@ -20,7 +24,24 @@ export default function App(props) {
 
             <div className="Cards" >
 
-                <Card titulo="Desafio 7: Tabela de preço" color="#F00">
+                <Card titulo="Desafio 10: Cominicação direta" color = "#f00">
+                    <DiretaPai/>
+                </Card>
+
+                <Card titulo="Desafio 9: Renderização condicional 2">
+                    <UsuarioInfo usuario = {{nome: "Fulano1"}}/>
+                    <UsuarioInfo usuario = {{Email: "Ful1@test.com"}}/>
+                    <UsuarioInfo/>
+                    <UsuarioInfo2 usuario = {{nome: "Fulano1"}}/>
+                    <UsuarioInfo2 usuario = {{Email: "Ful1@test.com"}}/>
+                    <UsuarioInfo2/>
+                </Card>
+
+                <Card titulo="Desafio 8: Renderização condicional 1">
+                    <ParOuImpar numero = {7}/>
+                </Card>
+
+                <Card titulo="Desafio 7: Tabela de preço">
                     <ListaProduto/>
                 </Card>
 
