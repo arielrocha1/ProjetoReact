@@ -17,6 +17,7 @@ import UsuarioInfo2 from "./components/Condicional/UsuarioInfo2";
 import DiretaPai from "./components/cominicacao/DiretaPai";
 import IndiretaPai from "./components/cominicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 export default function App(props) {
     return (
@@ -26,7 +27,11 @@ export default function App(props) {
 
             <div className="Cards" >
 
-                <Card titulo="Desafio 12: Componente controlado" color = "#f00">
+                <Card titulo="Desafio 13: Contador" color = "#f00">
+                    <Contador numeroInicial={100}/>
+                </Card>
+
+                <Card titulo="Desafio 12: Componente controlado">
                     <Input/>
                 </Card>
 
